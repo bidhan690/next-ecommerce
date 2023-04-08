@@ -1,13 +1,14 @@
-import SearchList from "./SearchList";
 import { useRouter } from "next/router";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { FiSearch } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 
 export default function SearchBar({ handleClose }) {
   const router = useRouter();
   const searchRef = useRef();
-
+  useEffect(() => {
+    searchRef.current.focus();
+  }, []);
   function handleKey(e) {
     if (e.key === "Enter") {
       handleSearch();
@@ -16,7 +17,8 @@ export default function SearchBar({ handleClose }) {
     }
   }
   function handleSearch(e) {
-    router.push(`search?q=${searchRef.current.value}`);
+    const query = searchRef.current.value;
+    router.push(`search?q=${query.toLowerCase()}`);
     handleClose();
   }
 

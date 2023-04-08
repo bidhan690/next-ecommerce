@@ -27,6 +27,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Go Show</title>
+        <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
       </Head>
       <div
         className={`${chewy.variable} ${andika.variable} ${oxygen.variable} `}
