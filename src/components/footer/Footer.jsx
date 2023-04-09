@@ -60,13 +60,17 @@ export default function Footer() {
               <ul className="w-full flex  justify-around items-center">
                 <li
                   className=" cursor-pointer"
-                  onClick={() => window.open("https://fb.com")}
+                  onClick={() =>
+                    window.open("https://www.facebook.com/priceless.hub")
+                  }
                 >
                   <MdFacebook size={40} />
                 </li>
                 <li
                   className="ml-4 cursor-pointer"
-                  onClick={() => window.open("https://instagram.com")}
+                  onClick={() =>
+                    window.open("https://www.instagram.com/priceless_fashions_")
+                  }
                 >
                   <AiOutlineInstagram size={40} />
                 </li>

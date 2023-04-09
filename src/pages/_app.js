@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Go Show</title>
+        <title>Priceless&apos;s Fashions</title>
         <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
       </Head>
       <div

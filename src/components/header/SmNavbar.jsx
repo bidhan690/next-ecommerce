@@ -35,13 +35,13 @@ export default function SmNavbar({ navBarToggle, navToggler }) {
             <h1 className="font-andika text-xl ml-3 font-[500] ">GoShow</h1>
           </div>
         </div>
-       
+
         <div className=" flex justify-center  ">
           <h1 className="font-oxygen text-lg text-center border-b border-gray-300 ">
             Buy quality products!
           </h1>
         </div>
-       
+
         <div className="h-[200px] ">
           <ul className="flex flex-col h-full justify-center items-center font-andika text-xl font-[500] ">
             <li className="my-3" onClick={navToggler}>
@@ -60,13 +60,17 @@ export default function SmNavbar({ navBarToggle, navToggler }) {
           <ul className="flex justify-around w-full">
             <li
               className=" cursor-pointer"
-              onClick={() => window.open("https://fb.com")}
+              onClick={() =>
+                window.open("https://www.facebook.com/priceless.hub")
+              }
             >
               <MdFacebook size={40} />
             </li>
             <li
               className="ml-4 cursor-pointer"
-              onClick={() => window.open("https://instagram.com")}
+              onClick={() =>
+                window.open("https://www.instagram.com/priceless_fashions_")
+              }
             >
               <AiOutlineInstagram size={40} />
             </li>
